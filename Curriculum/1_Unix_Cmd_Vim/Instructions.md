@@ -11,6 +11,7 @@ pull towards the use of your mouse, but don't worry... that will soon pass!
 
 # Pre-work Before Class
 Before attending this class, you should view and complete the following:
+
 1. [Codecademy's Learn the Command
 Line](https://www.codecademy.com/learn/learn-the-command-line) module.
 2. [Open Vim's Interactive Tutorial](http://www.openvim.com/).
@@ -18,6 +19,7 @@ Line](https://www.codecademy.com/learn/learn-the-command-line) module.
 # Class Objectives
 In order to complete this class, you will be expected to demonstrate the ability
 to complete the following exercises:
+
 1. Navigate your computer's entire folder directory and list all files from
 Bash.
 2. Write a shell script that reads a text file, finds all of the vowels and
@@ -28,6 +30,7 @@ applicatoin loads.
 # Extra Resources for Those Interested
 Here are some extra resources that are not required, but which some students may
 find valuable:
+
 1. [Mike G's Bash HOW-TO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html) is a
 comprehensive introduction to Bash.  This may be a little intense for students
 without an existing knowledge of shell scripts, but is a great repository for
