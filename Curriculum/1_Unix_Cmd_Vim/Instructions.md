@@ -25,7 +25,10 @@ Bash.
 2. Write a shell script that reads a text file, finds all of the vowels and
 pipes them into a new textfile.
 3. Configure your Bash.profile so that it loads your local setings when the
-applicatoin loads.
+application loads.
+4. Use Vim and Vundle to customize your text editor.
+5. Comfortably explain what your PATH varialbe is, where to find it and how to
+change it from the command line.
 
 # Extra Resources for Those Interested
 Here are some extra resources that are not required, but which some students may
