@@ -1,11 +1,11 @@
 # An Introduction to the Unix Shell, Command Line and Vim
 In this class, you will be introduced to the command line or terminal
-application as well as [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)),
-a common Unix shell command language. At the end of this class, you should feel
-a basic level of comfort executing commands from Bash, navigating the Unix
+application as well as [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) and [Zshell](https://en.wikipedia.org/wiki/Z_shell),
+two common Unix shells. At the end of this class, you should feel
+a basic level of comfort executing commands from bash/zsh, navigating the Unix
 directory structure, writing shell scripts from a text editor (preferably
-[Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)), "piping" together
-several shell scripts, and configuring your Bash profile to customize your
+[Vim](https://en.wikipedia.org/wiki/Vim_(text_editor))), "piping" together
+several shell scripts, and configuring your shell profile to customize your
 development environment.  By the end of this class you may still feel a slight
 pull towards the use of your mouse, but don't worry... that will soon pass!
 
@@ -27,7 +27,7 @@ pipes them into a new textfile.
 3. Configure your Bash.profile so that it loads your local setings when the
 application loads.
 4. Use Vim and Vundle to customize your text editor.
-5. Comfortably explain what your PATH varialbe is, where to find it and how to
+5. Comfortably explain what your PATH variable is, where to find it and how to
 change it from the command line.
 
 # Extra Resources for Those Interested
