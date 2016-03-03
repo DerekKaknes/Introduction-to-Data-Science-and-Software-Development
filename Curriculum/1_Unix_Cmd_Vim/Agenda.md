@@ -47,3 +47,20 @@ subdirectories listed by `ls`.  Next, use `pwd` to show your new working
 directory.  Now try using the command `cd ..` followed by `pwd`.  Where did `..`
 take you?  Using `cd ..` will navigate one directory up in the structure.  You
 can navigate up multiple directories by using `cd ../..` or `cd ../../..` etc.
+
+### Echo
+Talk about `echo`
+
+## Piping and Shell Scripting
+Navigating and echoing phrases is cool, but not super useful unless we can do
+something with them.  The use of 'pipes' and shell scripts allow us to build
+more complex functionality in our shell commands.
+
+### Touch and Cat
+Talk about `touch` to create simple files and `cat` to print their contents.
+Introduce terminology of `stdout` and `stdin` but don't worry about explaining.
+
+### Pipes
+Combine `echo`, `touch` and `cat` to start stringing together scripts using the
+`|` and `>` commands.
+
