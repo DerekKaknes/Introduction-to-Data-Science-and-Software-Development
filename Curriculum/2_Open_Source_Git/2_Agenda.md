@@ -56,7 +56,7 @@ On branch master
 Initial commit
 
 nothing to commit (create/copy files and use "git add" to track)
-``
+```
 There are a couple important pieces of information in this statement, so let's
 take them line-by-line.  
 
@@ -142,7 +142,7 @@ the following commands (remember the difference between `>` and `>>`?):
 ```
 echo "These are my environmental variables:\n" > test.txt
 env >> test.txt
-``
+```
 Let's check to see what we added by printing the contents to `stdout` using `cat
 test.txt`.  You should see a series of `KEY=value` pairs printed on each
 line.
