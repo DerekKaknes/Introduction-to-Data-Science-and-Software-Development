@@ -157,6 +157,7 @@ committed:`.  Perfect, now let's commit those changes using `git commit -m
 
 Great, we've got another commit under our belt.  Now try on your own to make
 another commit after completing the following additions to your repo:
+
 1) Append a new line of text to `test.txt` using the `echo <text> >> test.txt`
 command.
 2) Create a new file called `processes.txt` using the `touch` command.
