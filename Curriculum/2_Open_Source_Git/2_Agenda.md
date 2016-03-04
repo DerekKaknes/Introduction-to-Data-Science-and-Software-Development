@@ -50,13 +50,13 @@ hidden directory to record and manage all of the changes made within the
 Ok, great.  So we've got our git repo setup and are ready to start developing.
 The first thing we should do is check our status using `git status`.  You should
 receive a message saying something to the effect of:
-`
+```
 On branch master
 
 Initial commit
 
 nothing to commit (create/copy files and use "git add" to track)
-`
+```
 There are a couple important pieces of information in this statement, so let's
 take them line-by-line.  
 
