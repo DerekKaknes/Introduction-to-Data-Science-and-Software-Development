@@ -56,7 +56,7 @@ On branch master
 Initial commit
 
 nothing to commit (create/copy files and use "git add" to track)
-```
+``
 There are a couple important pieces of information in this statement, so let's
 take them line-by-line.  
 
@@ -106,9 +106,11 @@ understanding the developer's motivation for each commit - particularly when
 more than one person are working on the same repository.  Let's use this
 practice by adding the message `Adding first test file` as a commit message.
 
+So, your commit command should look like: `git commit -m "Adding first test
+file."`
+
 We can now check that our commit was received by using `git log`, which should
 show the recent commit along with the message.
-
 ### Branching and Developing
 Now that we have our first commit in the repo, let's start making some more
 substantial additions to our repo.  But before we continue development, we first
@@ -123,10 +125,49 @@ branch called `my-first-branch` by calling the command `git checkout -b
 my-first-branch`.  In response, you should have seen something like: `Switched
 to a new branch 'my-first-branch'`.  We can confirm this change by using `git
 status`, which now tells us that we are `On branch my-first-branch`.  Further,
-if we run `git branch
+if we run `git branch` a second time, we will now see that both `master` and
+`my-first-branch` show up.
+
+We can switch back and forth between branching by using the `git checkout
+<branch_name>` command (the same one we used to create the branch, just without
+the `-b` flag).  So if we want to hop back to the `master` branch, we can call
+`git checkout master`.  For now, let's stay on `my-first-branch`.
+
+Now that we have a new branch, let's start adding some additional features to
+the code in our repo.  In this case, all we have is a single, empty text file -
+`test.txt`.  Let's add some text to it.  Remembering back to last class, let's
+use some shell commands to generate text and pipe it into the `test.txt` file.
+Let's start by appending all of our environmental variables into the file using
+the following commands (remember the difference between `>` and `>>`?):
+```
+echo "These are my environmental variables:\n" > test.txt
+env >> test.txt
+``
+Let's check to see what we added by printing the contents to `stdout` using `cat
+test.txt`.  You should see a series of `KEY=value` pairs printed on each
+line.
+
+Now that we made changes to `test.txt`, let's check to see if git has tracked
+them by using `git status`.  You should now see that `test.txt` shows up under
+`Changes not staged for commit:` and has a prefix of `modified:`.  Let's now
+stage these changes by using `git add test.txt` and check its success with `git
+status`.  We should now see that `test.txt` shows up under `Changes to be
+committed:`.  Perfect, now let's commit those changes using `git commit -m
+"Adding env variables"`.
+
+Great, we've got another commit under our belt.  Now try on your own to make
+another commit after completing the following additions to your repo:
+1) Append a new line of text to `test.txt` using the `echo <text> >> test.txt`
+command.
+2) Create a new file called `processes.txt` using the `touch` command.
+3) Add a list of all your locally running processes by using `ps aux | grep
+<username>` (remember that `|` is used to pipe the output from one shell command
+into another.  If you don't recognize `ps aux` or `grep`, then use google to
+quickly familiarize yourself).
+
 ### Merging into Master
 `git checkout master`
 `git merge my-first-branch`
-
+`git branch -d my-first-branch`
 
 ## Github
