@@ -157,11 +157,10 @@ committed:`.  Perfect, now let's commit those changes using `git commit -m
 
 Great, we've got another commit under our belt.  Now try on your own to make
 another commit after completing the following additions to your repo:
-
-1) Append a new line of text to `test.txt` using the `echo <text> >> test.txt`
+1. Append a new line of text to `test.txt` using the `echo <text> >> test.txt`
 command.
-2) Create a new file called `processes.txt` using the `touch` command.
-3) Add a list of all your locally running processes by using `ps aux | grep
+2. Create a new file called `processes.txt` using the `touch` command.
+3. Add a list of all your locally running processes by using `ps aux | grep
 <username>` (remember that `|` is used to pipe the output from one shell command
 into another.  If you don't recognize `ps aux` or `grep`, then use google to
 quickly familiarize yourself).
