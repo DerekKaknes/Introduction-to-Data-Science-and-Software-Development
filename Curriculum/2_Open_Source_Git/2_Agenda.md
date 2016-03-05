@@ -166,9 +166,34 @@ command.
 into another.  If you don't recognize `ps aux` or `grep`, then use google to
 quickly familiarize yourself).
 
-### Merging into Master
-`git checkout master`
-`git merge my-first-branch`
-`git branch -d my-first-branch`
+After you have committed your changes (with an informative commit message!), use
+the `git log` command to view the current state of your branch.  You should
+notice that `my-first-branch` is now two commits ahead of the `master` branch.
 
-## Github
+### Merging into Master
+Now that we have a few commits on our new `my-first-branch`, let's go ahead and
+merge them into the `master` branch.  First, let's checkout the `master` branch
+using `git checkout master`.  Now, let's use `git log` to see the status of the
+`master` branch - notice that the commits we saw on `my-first-branch` are not
+present on `master`.  In order to incorporate those commits - and the associated
+changes to the repo - we use the command `git merge <branch_name>`, with the
+branch name in this case being `my-first-branch`.  After the merge, if we run
+`git log` we should see our two commits now leading our `master` branch.
+
+Once we have merged in the changes from `my-first-branch`, we don't really need
+to keep that branch around any longer.  We can see all of our branches by using
+the `git branch` command.  We should see both our `master` branch and our
+`my-first-branch` in the response.  We can delete a branch by using `git
+branch -d <branch_name>`, with the `-d` flag telling git to delete the following
+branch.  Let's clean up and get rid of `my-first-branch` using `git branch -d
+my-first-branch`.  Now when we re-run `git branch` we should see only our
+`master` branch (goodbye `my-first-branch`!).
+
+Congratulations!  You've essentially completed your first full cycle through the
+git workflow.  At this moment, you may be saying to yourself, "Well, that was
+neat, but that seems like a lot of work for....actually, I'm not sure what the
+point of that was?" Well, as we said in the beginning, git is a sharing tool -
+so let's start sharing your code!
+
+### Github
+
